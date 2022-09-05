@@ -1,10 +1,21 @@
 ## **Задача 1.**
 #### Приготовьте свой собственный inventory файл prod.yml. 
 ```
+iurii-devops@Host-SPB:~/ansible$ cat 8_2_playbook/inventory/prod.yml; echo ""
+---
+elasticsearch:
+  hosts:
+    ARM1:
+      ansible_connection: docker
+kibana:
+  hosts:
+    kibana:
+      ansible_connection: docker
 ```
 ## **Задача 2.** 
 #### Допишите playbook: нужно сделать ещё один play, который устанавливает и настраивает kibana.
 ```
+
 ```
 ## **Задача 3.**
 #### Tasks должны: скачать нужной версии дистрибутив, выполнить распаковку в выбранную директорию, сгенерировать конфигурацию с параметрами.
